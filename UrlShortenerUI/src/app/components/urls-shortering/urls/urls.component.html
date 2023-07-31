@@ -1,0 +1,38 @@
+
+<button class="btn btn-primary" (click)="openAddUrlDialog()">Add Url</button>
+
+   <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Original URL</th>
+        <th scope="col">Shortened URL</th>
+        <th scope="col">Created Date</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let url of shortUrls">
+        <td>
+          <button class="button-link" (click)="navigateToOriginaltUrl(url.originalUrl)">
+            {{ url.originalUrl }}
+          </button>
+          
+        </td>
+
+        <td>          
+        <button class="button-link" (click)="navigateToShortUrl(url.shortenedUrl)">
+          {{ url.shortenedUrl }}
+        </button>
+        
+        </td>
+        <td>{{url.createdDate | date}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteUrl(url.urlId)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-danger" (click)="logout()">Logout</button>
+
+  

@@ -1,0 +1,15 @@
+
+    <h2>Login Page</h2><br>
+
+        <form [formGroup]="loginForm" (submit)="onLogin()">
+            <label><b>User Name</b></label>
+            <input type="text" formControlName="username" placeholder="Username">
+            <br><br>
+            <label><b>Password</b></label>
+            <input type="password" formControlName="password" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Log In Here">
+            <br><br>
+            Register <a routerLink="/register">Sign-Up</a>
+          </form>
+          

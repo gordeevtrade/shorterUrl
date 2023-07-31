@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Добавить URL</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>URL</mat-label>
+      <input matInput formControlName="url">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Отмена</button>
+  <button mat-button (click)="addUrl()" [disabled]="form.invalid">Добавить</button>
+</div>

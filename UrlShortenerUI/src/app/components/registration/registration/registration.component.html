@@ -1,0 +1,13 @@
+<h2>Registration Page</h2><br>
+
+<form [formGroup]="registrationForm" (submit)="onRegister()">
+  <label><b>User Name</b></label>
+  <input type="text" formControlName="username" placeholder="Username">
+  <br><br>
+  <label><b>Password</b></label>
+  <input type="password" formControlName="password" placeholder="Password">
+  <br><br>
+  <input type="submit" value="Register">
+  <br><br>
+  Already have an account? <a href="#">Login</a>
+</form>

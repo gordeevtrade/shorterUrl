@@ -1,0 +1,16 @@
+.table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    margin-right: 10px;
+  }
+  /* Стили для кнопки, чтобы сделать ее похожей на ссылку */
+.button-link {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
